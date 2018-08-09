@@ -1,0 +1,257 @@
+/* * http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+/* article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+/* } */
+
+/*Reset Ends */
+/*---Body---*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---------------Nav----------------- */
+
+.navbar {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  font-family: cursive;
+  font-size: 30px;
+}
+
+nav ul li a {
+  color: #071013;
+  text-decoration: none;
+}
+
+.navbar :hover {
+  transition: color 0.3s ease-in-out;
+  color: #FF0D00;
+}
+
+.active a {
+  color: #FF0D00;
+}
+
+/*-----------Footer--------------*/
+
+footer {
+
+  width: 100%;
+  margin: auto auto 0 auto;
+}
+
+.icons {
+  color: #071108;
+}
+
+.fa-roadtohire {
+  width: 50%;
+  height: 200px;
+}
+
+/*----------------Section/Index---------------------*/
+
+.index {
+  background-image: url("img/NY.jpg");
+  background-size: cover;
+}
+
+.media {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.firstName {
+  display: flex;
+  font-family: Monaco;
+  font-size: 95px;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.lastName {
+  justify-content: center;
+  display: flex;
+  font-family: Monaco;
+  font-size: 95px;
+  align-items: center;
+  width: 50%;
+}
+
+/* --------------Bio-------------- */
+
+.biobody {
+  background-image: url("img/bridge.jpg");
+  background-size: cover;
+}
+
+.intro {
+  text-align: center;
+  font-size: 40px;
+  color: aliceblue;
+}
+
+.ty img {
+  height: 300px;
+  width: 300px;
+}
+
+/*--------Resume------*/
+
+.r-body {
+  background-image: url("img/london.jpg");
+  background-size: cover;
+}
+
+/* -----------Gallery-----------*/
+
+.gallery-body {
+  background-image: url(img/jesse-collins-116206-unsplash.jpg);
+  background-size: cover;
+}
+
+.pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: azure;
+  box-shadow: 5px 5px 5px #071108;
+  background-color: #071108;
+  width: 25%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 1.5%;
+}
+
+.pic img {
+  height: 300px;
+  width: 100%;
+}
+
+figcaption {
+  padding: 3%;
+}
+
+/*Contact*/
+
+.form {
+  text-align: center;
+}
+
+.contact-body {
+  background-image: url(img/redroad.jpg);
+  background-size: cover;
+  font-size: 30px;
+  color: #FF0D00;
+}
+
+/*-----CodePen----*/
+
+.screenshot1 img {
+  height: 90%;
+  width: 90%;
+}
+
+.screenshot2 img {
+  height: 90%;
+  width: 90%;
+}
+
+.caption {
+  text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  /*--------Header--------*/
+  .navbar {
+    display: block;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  /*--inedx----*/
+  .media {
+    text-align: center;
+  }
+  .firstName {
+    font-size: 30px;
+  }
+  .lastName {
+    font-size: 30px;
+  }
+  /*------Footer----*/
+  .roadtohire {
+    height: 30px;
+    width: 30px;
+  }
+  .footer {
+    bottom: 0;
+  }
+  /*----Gallery---*/
+  .container {
+    display: inline;
+  }
+  .pic {
+    flex-direction: column;
+    justify-content: center;
+    color: azure;
+    box-shadow: 5px 5px 5px #071108;
+    background-color: #071108;
+    width: 100%;
+  }
+}
