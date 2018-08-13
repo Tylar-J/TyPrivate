@@ -7,7 +7,7 @@
     <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="main.js"></script>
+    <script src="blah.js"></script>
 </head>
 
 <body class="contact-body">
@@ -35,7 +35,7 @@
             </ul>
         </nav>
     </header>
-    <form>
+    <form onsubmit="validate()">
         <fieldset>
             <legend>Personal Info</legend>
             <!--First Name-->
@@ -74,6 +74,10 @@
 
             <textarea name="comments" placeholder="Comments/Questions..." cols "40" row "10"></textarea>
 
+        </div>
+        
+        <div class="submit">
+        <input type="submit">
         </div>
 
     </form>
