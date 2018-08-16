@@ -48,7 +48,8 @@ table {
 	border-spacing: 0;
 /* } */
 
-/*Reset Ends */
+/*---------------------------------------------------------------Reset Ends ------------------------------------------------------------------------*/
+
 /*---Body---*/
 
 body {
@@ -57,7 +58,7 @@ body {
   min-height: 100vh;
 }
 
-/* ---------------Nav----------------- */
+/* ------------------------------------------------------------------Nav--------------------------------------------------- */
 
 .navbar {
   display: flex;
@@ -81,10 +82,9 @@ nav ul li a {
   color: #FF0D00;
 }
 
-/*-----------Footer--------------*/
+/*-------------------------------------------------------------Footer--------------------------------------------------------*/
 
 footer {
-
   width: 100%;
   margin: auto auto 0 auto;
 }
@@ -98,7 +98,7 @@ footer {
   height: 200px;
 }
 
-/*----------------Section/Index---------------------*/
+/*--------------------------------------------------------Section/Index---------------------------------------------------------*/
 
 .index {
   background-image: url("img/NY.jpg");
@@ -129,7 +129,28 @@ footer {
   width: 50%;
 }
 
-/* --------------Bio-------------- */
+/* ----------------------------------------------------------Bio------------------------------------------------------------------ */
+
+.nav2 {
+  .navbar1 {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-family: cursive;
+    font-size: 30px;
+  }
+  nav ul li a {
+    color: azure;
+    text-decoration: none;
+  }
+  .navbar1 :hover {
+    transition: color 0.3s ease-in-out;
+    color: #FF0D00;
+  }
+  .active a {
+    color: #FF0D00;
+  }
+}
 
 .biobody {
   background-image: url("img/bridge.jpg");
@@ -138,23 +159,89 @@ footer {
 
 .intro {
   text-align: center;
-  font-size: 40px;
-  color: aliceblue;
+  .bioTitle {
+    color: aliceblue;
+    font-family: 'Julius Sans One';
+    font-size: 70px;
+  }
+  .bioGraph {
+    line-height: 1.6;
+    font-family: 'Raleway';
+    font-size: 40px;
+    color: aliceblue;
+    width: 30%;
+    margin-left: 37%;
+  }
 }
 
-.ty img {
-  height: 300px;
-  width: 300px;
+.ty {
+  img {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+  }
 }
 
-/*--------Resume------*/
+/*---------------------------------------------------------------Resume----------------------------------------------------------------*/
 
 .r-body {
   background-image: url("img/london.jpg");
   background-size: cover;
+  h1 {
+    text-align: center;
+    font-family: 'Julius Sans One';
+  }
+  address {
+    font-family: 'Raleway';
+    text-align: center;
+  }
+  .phoneNum {
+    font-family: 'Raleway';
+    text-align: center;
+  }
+  .email {
+    font-family: 'Raleway';
+    text-align: center;
+    margin-top: 0px;
+  }
+  h2 {
+    font-weight: 300px;
+    font-family: 'Julius Sans One';
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  .shadow {
+    color: #FF0D00;
+    letter-spacing: 2px;
+    text-shadow: 1px -1px 0 #767676, // 1px 2px 1px #737272, 
+  }
+  .summary {
+    margin-right: 60%;
+  }
+  .flex_resume1 {
+    font-family: 'Raleway';
+    display: flex;
+  }
+  .flex_resume2 {
+    font-family: 'Raleway';
+    display: flex;
+    ul {
+      margin-left: 10%;
+    }
+  }
+  .pSkills {
+    margin-left: 60%;
+  }
+  .skills {
+    margin-left: 15%;
+  }
+  .experience {
+    font-family: 'Raleway';
+    margin-left: 85%;
+  }
 }
 
-/* -----------Gallery-----------*/
+/* ------------------------------------------------------------------------------Gallery--------------------------------------------------------------*/
 
 .gallery-body {
   background-image: url(img/jesse-collins-116206-unsplash.jpg);
@@ -179,45 +266,79 @@ footer {
 }
 
 .pic img {
+  filter: grayscale(1);
+  transition: all .5s ease-in-out;  
   height: 300px;
   width: 100%;
+
+}
+
+img:hover{
+  filter:grayscale(0);
+  transform: scale(1);
 }
 
 figcaption {
   padding: 3%;
 }
 
-/*Contact*/
+/*---------------------------------------------------------------------------Contact---------------------------------------------------------------------------*/
 
-.form {
+
+
+
+.formFlex{
+  display: contents;
   text-align: center;
+
+
+}
+label{
+  display: inline-block;
+  width: 170px;
+  text-align: right;
+  margin-bottom: 20px;
+
+}
+
+
+form {
+  text-align: center;
+  padding: 20px 12px 10px 20px;
+
 }
 
 .contact-body {
-  background-image: url(img/redroad.jpg);
-  background-size: cover;
   font-size: 30px;
   color: #FF0D00;
 }
 
-.submit{
+.submit {
   text-align: center;
 }
-/*-----CodePen----*/
 
+/*----------------------------------------------------------------------CodePen---------------------------------------------------------------------------------*/
+.github{
+justify-content: space-evenly;
+
+  display: flex;
+}
 .screenshot1 img {
   height: 90%;
   width: 90%;
 }
 
 .screenshot2 img {
-  height: 90%;
-  width: 90%;
+  height: 70%;
+  width: 70%;
 }
 
 .caption {
+  font-family: "Raleway";
   text-align: center;
 }
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 @media only screen and (max-width: 400px) {
   /*--------Header--------*/
